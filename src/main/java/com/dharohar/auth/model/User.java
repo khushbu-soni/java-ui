@@ -15,7 +15,7 @@ public class User {
     private String created_at;
     private Set<Role> roles;
 
-//    private Set<Tree> trees;
+    private Set<Tree> trees;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -88,14 +88,12 @@ public class User {
         this.roles = roles;
     }
     
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+	public Set<Tree> getTree() {
+        return trees;
+    }
 
-//	@ManyToMany
-//    @JoinTable(name = "user_tree", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "tree_id"))
-//    public Set<Tree> getTree() {
-//        return trees;
-//    }
-//
-//    public void setTree(Set<Tree> trees) {
-//        this.trees = trees;
-//    }
+    public void setTree(Set<Tree> trees) {
+        this.trees = trees;
+    }
 }
