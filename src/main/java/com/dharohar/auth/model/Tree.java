@@ -4,8 +4,8 @@ package com.dharohar.auth.model;
 import javax.persistence.*;
 import java.util.Set;
 
-@Entity
-@Table(name = "trees")
+//@Entity
+//@Table(name = "trees")
 public class Tree {
 	
 	private Long id;
