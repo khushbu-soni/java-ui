@@ -179,26 +179,28 @@
                     <li class="active">
                         <a href="index.jsp"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
-                    <li>
-                        <a href=""><i class="fa fa-fw fa-bar-chart-o"></i> Plantation</a>
+                  <%-- <c:if test="${pageContext.request.userPrincipal.name == 'Admin'}">
+                   --%>  <li>
+                        <a href="${contextPath}/plantations"><i class="fa fa-fw fa-bar-chart-o"></i> Plantation</a>
                     </li>
-                    <li>
+                  <%--   </c:if> --%>
+                   <!--  <li>
                         <a href="../tables.html"><i class="fa fa-fw fa-table"></i> Deatil Page</a>
+                    </li> -->
+                    <li>
+                        <a href="${contextPath}/blog""><i class="fa fa-fw fa-edit"></i> Blog</a>
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Blog</a>
+                        <a href="${contextPath}/bulletin"><i class="fa fa-fw fa-desktop"></i> Bulletin Support</a>
                     </li>
                     <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bulletin Support</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Support Panel</a>
+                        <a href="${contextPath}/support"><i class="fa fa-fw fa-wrench"></i> Support Panel</a>
                     </li>
                      <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Categories</a>
+                        <a href="${contextPath}/category"><i class="fa fa-fw fa-wrench"></i> Categories</a>
                     </li>
                     <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Map Of Plants</a>
+                        <a href="${contextPath}/map"><i class="fa fa-fw fa-wrench"></i> Map Of Plants</a>
                     </li>
                     <!-- <li>
                         <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
@@ -254,13 +256,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="#">
+                            <!-- <a href="#">
                                 <div class="panel-footer">
                                     <span class="pull-left">View Details</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">

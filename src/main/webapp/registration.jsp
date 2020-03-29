@@ -225,6 +225,14 @@ width: 100%;
     border: 1px solid transparent;
     margin-top: -44px; important!
 }
+.btn-bar {
+    max-width: 346px;
+    margin: -26px 137px; important !
+    display: block;
+    position: relative;
+    top: 40px;
+    width: 100%;
+}
 </style>
 <script>
 
@@ -349,45 +357,53 @@ function rotate() {
 <div class="col-md-8">
 	<div class="front-slider pull-left">
 	<div id="carousel">
-  <div class="btn-bar">
-    <div id="buttons"><a id="prev" href="#"><</a><a id="next" href="#">></a> </div></div>
+ 
     <div id="slides">
         <ul>
             <li class="slide">
                 <div class="quoteContainer">
-                    <p class="quote-phrase"><span class="quote-marks">"</span> I was literally BLOWN AWAY by Company A's work! They went above and beyond all of our expectations with design, usability. and branding, I will reccommend them to everyone I know!<class="quote-marks">"</span>
-
-                    </p>
+                    <p class="quote-phrase "><h3 style="color:white; font-style :italic;"> what are the equipments at the workshop?</h3>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Lathe Machine to shape up the wood , plastic and metal</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Laser Machine to cut plywood/hardwood/paper/MDF</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Sanding Machine used for material finishing</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Drill Press is used to drilll</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Mitre saw to cut materials</h5>
+				    </p>
+				   
                 </div>
-                <div class="authorContainer">
-                    <p class="quote-author">John Doe // Local Business Owner</p>
+                
+            </li>
+             <li class="slide">
+                <div class="quoteContainer">
+                    <p class="quote-phrase "><h3 style="color:white; font-style :italic;"> what are the probable risk?</h3>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Possible fatel cut injuries following contact with moving parts of machinery</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Laser Machine to cut plywood/hardwood/paper/MDF</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Sanding Machine used for material finishing</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Drill Press is used to drilll</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Mitre saw to cut materials</h5>
+				    </p>
+				   
                 </div>
             </li>
             <li class="slide">
+                 <li class="slide">
                 <div class="quoteContainer">
-                    <p class="quote-phrase"><span class="quote-marks">"</span>
-                      I could not stop staring! Company A's Web Solutions are by far the most elegant solutions, you can't beat their quality and attention to detail!
-                    <span class="quote-marks">"</span>
-
-                    </p>
-                </div>
-                <div class="authorContainer">
-                    <p class="quote-author">Andy Fakename // CEO: Andy's Camping Supplies</p>
-                </div>
-            </li>
-            <li class="slide">
-                <div class="quoteContainer">
-                    <p class="quote-phrase"><span class="quote-marks">"</span>Carl Fakeguy, was the most helpful designer I've ever hired. He listened to my ideas and advised against things that could negatively affect my CEO. Company A is by far the most generous and helpful company, 5/5!<span class="quote-marks">"</span>
-
-                    </p>
-                </div>
-                <div class="authorContainer">
-                    <p class="quote-author">Janice Falsename</p>
+                    <p class="quote-phrase "><h3 style="color:white; font-style :italic;"> what are the equipments at the workshop?</h3>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Lathe Machine to shape up the wood , plastic and metal</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Laser Machine to cut plywood/hardwood/paper/MDF</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Sanding Machine used for material finishing</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Drill Press is used to drilll</h5>
+                     <h5 class="text-align-left" style="color:white; font-style :italic;">Mitre saw to cut materials</h5>
+				    </p>
+				   
                 </div>
             </li>
         </ul>
     </div>
+     <div class="btn-bar">
+    <div id="buttons"><a id="prev" href="#"><</a><a id="next" href="#">></a> </div></div>
 	</div>
+	
 	</div>
 	</div>
 	<div class="col-md=4"><div class="login-page">

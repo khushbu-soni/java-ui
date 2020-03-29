@@ -29,7 +29,8 @@ public class SecurityServiceImpl implements SecurityService{
 
         return null;
     }
-
+    
+   
     @Override
     public void autologin(String username, String password) {
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);

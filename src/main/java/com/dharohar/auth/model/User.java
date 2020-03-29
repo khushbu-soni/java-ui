@@ -96,4 +96,17 @@ public class User {
     public void setTree(Set<Tree> trees) {
         this.trees = trees;
     }
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", username=" + username + ", password=" + password + ", passwordConfirm="
+				+ passwordConfirm + ", is_admin=" + is_admin + ", is_active=" + is_active + ", created_at=" + created_at
+				+ ", roles=" + roles + ", trees=" + trees + ", getId()=" + getId() + ", getUsername()=" + getUsername()
+				+ ", getPassword()=" + getPassword() + ", getPasswordConfirm()=" + getPasswordConfirm()
+				+ ", getIs_admin()=" + getIs_admin() + ", getIs_active()=" + getIs_active() + ", getCreate_at()="
+				+ getCreate_at() + ", getRoles()=" + getRoles() + ", getTree()=" + getTree() + ", getClass()="
+				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	}
+    
+    
 }

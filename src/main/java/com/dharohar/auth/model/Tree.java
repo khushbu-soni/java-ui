@@ -9,7 +9,10 @@ import java.util.Set;
 public class Tree {
 	
 	private Long id;
-	private String number;
+	private String name;
+	private String image;
+	private String tree_health;
+	private String location;
 	private User user;
 
 	@Id
@@ -21,13 +24,43 @@ public class Tree {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getNumber() {
-		return number;
-	}
-	public void setNumber(String number) {
-		this.number = number;
-	}
 	
+	
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+		
+	
+	
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	public String getTree_health() {
+		return tree_health;
+	}
+
+	public void setTree_health(String tree_health) {
+		this.tree_health = tree_health;
+	}
+
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "user_id", nullable = false)
 	public User getUser() {

@@ -1,9 +1,13 @@
 package com.dharohar.auth.web;
 
 import com.dharohar.auth.model.User;
+import com.dharohar.auth.repository.UserRepository;
 import com.dharohar.auth.service.SecurityService;
 import com.dharohar.auth.service.UserService;
 import com.dharohar.auth.validator.UserValidator;
+
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,11 +26,15 @@ public class UserController {
 
     @Autowired
     private UserValidator userValidator;
+    
+    @Autowired
+    UserRepository userRepo;
 
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
-    public String registration(Model model) {
+    public String registration( Model model) {
         model.addAttribute("userForm", new User());
-
+        
+        
         return "registration";
     }
 
@@ -53,6 +61,7 @@ public class UserController {
 
         if (logout != null)
             model.addAttribute("message", "You have been logged out successfully.");
+        
 
         return "login";
     }
